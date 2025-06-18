@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
+
+header, nav, footer{
+    width: 100%;
+}
+
+@font-face{
+    src: url('../font/Bilo.otf');
+font-family: 'mifont';
+font-weight: 400;
+}
+
+header {
+    font-family: 'mifont', sans-serif;
+  
+}
+
+
+nav {
+    background-color: rgb(128, 128, 128);
+    padding: 10px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+   margin: 0 50px;
+}
+
+p{
+    text-align: center;
+  
+}
+
+h2{
+    font-size: 30px;
+    animation-name: opacidad;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes opacidad {
+
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+
+}
+
+h4{
+    font-weight: 200;
+   font-style: italic;
+}
+
+a{
+    color: white;
+}
+#nombre{
+
+     background-color: rgb(128, 128, 128);
+    font-family: "Codystar", sans-serif;
+
+height:  70px;
+margin: 0;
+color:blue;
+justify-content: center;
+align-items: center;
+padding: 10px;
+
+font-weight: 400;
+font-size: 80px;
+border-right: 3px solid blue;
+width:0;
+animation-name: escribo;
+animation-duration: 6s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+overflow: hidden;
+}
+
+@keyframes escribo{
+    from{width: 0;}
+    to {width: 1500px;}
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #aaaaaa;
+    color: blue;
+}
+
+#gridgaleria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.3 linear;
+}
+img:hover{
+    transform: scale(1.04);
+}
+
+.proyecto{
+    width: 400px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    padding: 5px;
+    transition: all 0.2s linear;
+
+}
+
+.proyecto:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#Servicios {
+    display: flex;
+justify-content: space-between;
+margin: 10px;
+
+}
+footer {
+    background-color: white;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact{
+    color: blue;
+font-size: 15px;
+justify-content: space-between;
+
+}
